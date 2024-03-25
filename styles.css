@@ -1,0 +1,97 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styles */
+#header {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+#header a {
+    color: #000;
+}
+
+/* Home Section Styles */
+#home {
+    background-color: black;
+    color: #fff;
+}
+
+/* About Section Styles */
+#about {
+    background-color: black;
+    color: #fff;
+    border-image-width: 80px;
+    
+}
+
+/* Projects Section Styles */
+#projects {
+    background-color: #c2c0c3;
+    border-image-width: 10px;
+    image-rendering: pixelated;
+}
+
+/* Achievements Section Styles */
+#achievements {
+    background-color: black;
+    color: #fff;
+}
+
+/* Contact Section Styles */
+#contact {
+    background-color: #c2c0c3;
+}
+
+/* Footer Styles */
+#footer {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+    table {
+        width: 100% !important;
+    }
+
+    table[id="header"] td,
+    table[id="footer"] td {
+        text-align: center;
+    }
+
+    table[id="footer"] td {
+        font-size: 14px;
+    }
+
+    table[id="footer"] td a {
+        font-size: 16px;
+    }
+
+    table[id="footer"] td:last-child {
+        display: none;
+    }
+
+    #header a,
+    #footer a {
+        display: block;
+        padding: 10px 0;
+    }
+
+    #header table td:nth-child(odd),
+    #footer table td:nth-child(odd) {
+        display: none;
+    }
+
+    #header table td:nth-child(2),
+    #footer table td:nth-child(2) {
+        display: block;
+    }
+
+    #footer2 {
+        display: none;
+    }
+}
