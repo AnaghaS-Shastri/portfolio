@@ -2,547 +2,223 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content=
-		"width=device-width, initial-scale=1.0">
-	<title>HTML Project</title>
-	<link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Project</title>
+    <style>
+    
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        #header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        #footer1,
+        #footer2 {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        #footer2 {
+            background-color: black;
+        }
+
+        .content-section {
+            background-color: white;
+            padding: 20px;
+            margin: 20px;
+        }
 	
+		
+		.project {
+			display: flex;
+			margin-bottom: 30px;
+		}
+
+		.project img {
+			max-width: 350px;
+			margin-right: 20px;
+		}
+
+		.project-details {
+			flex: 1;
+		}
+
+		.project-details h3 {
+			margin-top: 0;
+		}
+
+		.project-details p {
+			margin-bottom: 10px;
+		}
+
+		.project-details a {
+			display: inline-block;
+			padding: 8px 16px;
+			background-color: #2eafe2;
+			color: #fff;
+			text-decoration: none;
+			border-radius: 5px;
+		}
+
+		.project-details a:hover {
+			background-color: #1c7baa;
+		}
+				
+		.about-content {
+			display: flex;
+			align-items: center;
+		}
+
+		.about-content img {
+			max-width: 15%;
+			margin-right: 20px; 
+		}
+
+		.text-content {
+			flex: 1;
+		}
+
+        
+        @media screen and (max-width: 768px) {
+            .content-section {
+                margin: 10px;
+            }
+        }
+    </style>
 </head>
 
 <body>
-	<!--Header(start)-->
-	<table id="header" border="0" width="100%"
-		cellpadding="0" cellspacing="0" bgcolor="#4CAF50">
-		<tr>
-			<td>
-				<table border="0" cellpadding="15"
-					cellspacing="0" width="90%" align="center">
-					<tr>
-						<td>
-							
+   
+    <div id="header">
+        <h1>Lessgoo!!</h1>
+        <nav>
+            <a href="#home">Home</a> |
+            <a href="#about">About</a> |
+            <a href="#projects">Projects</a> |
+            <a href="#achievements">Achievements</a> |
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
 
-						</td>
-
-						<td>
-							<font face="Comic sans MS" size="6">
-								<b>Lessgoo!!</b>
-							</font>
-						</td>
-
-						<td width="15%">
-							
-						</td>
-
-						<td>
-							<a href="#home" style="text-decoration:none">
-								<font face="Verdana" size="5" color=black>
-									Home
-								</font>
-							</a>
-						</td>
-
-						<td>
-							|
-						</td>
-
-						<td>
-							<a href="#about" style="text-decoration:none">
-								<font face="Verdana" size="5" color=black>
-									About
-								</font>
-							</a>
-						</td>
-
-						<td>
-							|
-						</td>
-
-						<td>
-							<a href="#projects" style="text-decoration:none">
-								<font face="Verdana" size="5" color=black>
-									Projects
-								</font>
-							</a>
-						</td>
-
-						<td>
-							|
-						</td>
-
-						<td>
-							<a href="#achievements" style="text-decoration:none">
-								<font face="Verdana" size="5" color=black>
-									Achievements
-								</font>
-							</a>
-						</td>
-
-						<td>
-							|
-						</td>
-
-						<td>
-							<a href="#contact" style="text-decoration:none">
-								<font face="Verdana" size="5" color=black>
-									Contact
-								</font>
-							</a>
-						</td>
-					</tr>
-				</table>
-			</td>
-		</tr>
-	</table>
-	<!--Header(end)-->
-
-	<!--Home(start)-->
-	<table id="home" border="1" width="100%"
-		cellpadding="20" cellspacing="0" bgcolor="black">
-		<tr>
-			<td>
-				<table border="0" cellpadding="15"
-					cellspacing="0" width="90%" align="center">
-					<tr>
-						<td align="center" valign="middle">
-							<h3>
-								<font face="Times New Roman"
-									size="6" color="#ffffff">
-									Hi! I'm Anagha S Shastri.
-								</font>
-							</h3>
-
-							<h2>
-								<font face="Verdana" size="6"
-									color="#4CAF50">
-									<!-- Freelance Programmer -->
-								</font>
-							</h2>
-						</td>
-					</tr>
-				</table>
-			</td>
-		</tr>
-	</table>
-	<!--Home(end)-->
+  
+<div id="home" class="content-section">
+    <h2>Hi! I'm Anagha S Shastri.</h2>
+    <p><b>Enthusiastic Code Maker!</b></p>
+</div>
 
 
-	<!--About(start)-->
-	<table id="about" border="0" width="100%"
-		cellpadding="0" cellspacing="0" bgcolor="black">
-		<tr>
-			<td>
-				<table border="0" cellpadding="15"
-					cellspacing="0" width="80%" align="center">
-					<tr>
-						<td height="180" align="center"
-							valign="middle" colspan="2">
-							<font face="Verdana" size="7"
-								color="#4CAF50">
-								Know who am I!
-							</font>
-							<hr color="#4CAF50" width="90">
-						</td>
-					</tr>
-
-					<tr>
-						<td width="30%">
-							<img src="assets\portme.jpg">
-						</td>
-
-						<td width="60%">
-							<font face="Verdana" size="5"
-								color="white">
-								Thanks for your interest, here 
-								is a summary of me as a beginner. 
-								<hr color="black">
-								I being a proud AIML engineering student
-                                                                in UVCE, still being a beginner, 
-								love to solve programming problems 
-								in most efficient ways.
-								<hr color="black">
-
-								I do my work mainly in C-Language, 
-								JavaScript, JAVA, Python and MongoDB. I love learning 
-                                                                new things, that too in coding and
-                                                                programming. 
-								<hr color="black">
-
-								This website is basically one of my 
-								Web Development project which is 
-								built using HTML & CSS.
-
-								Thanks again for reading this, 
-								because of people like you, it 
-								exists and prospers!
-								<hr color="black">
-								Cheers,
-								<br>
-								<b>Lessgoo!!.</b>
-							</font>
-						</td>
-					</tr>
-				</table>
-				<hr color="black">
-				<hr color="black">
-				<hr color="black">
-			</td>
-		</tr>
-	</table>
-	<!--About(end)-->
+<div id="about" class="content-section">
+    <h2>Know who am I!</h2>
+    <div class="about-content">
+        <img src="assets/portme.jpg" alt="Anagha S Shastri">
+        <div class="text-content">
+            <p><b>Thanks for your interest, here is a summary of me as a beginner.</b></p>
+            <p>I am a proud AIML engineering student at UVCE. Despite being a beginner, I love solving programming problems efficiently.</p>
+            <p>I primarily work with C-Language, JavaScript, JAVA, Python, and MongoDB. I'm passionate about learning new things, especially in coding and programming.</p>
+            <p>This website is one of my Web Development projects built using HTML & CSS.</p>
+            <p><b>Thanks again for reading this, because of people like you, it exists and prospers!</b></p>
+        </div>
+    </div>
+</div>
 
 
-	<!--Projects(start)-->
-	<table id="projects" border="0" width="100%"
-		cellpadding="0" cellspacing="0" bgcolor="#c2c0c3">
-		<tr>
-			<td>
-				<table border="0" cellpadding="15"
-					cellspacing="0" width="80%" align="center">
-					<tr>
-						<td height="180" align="center"
-							valign="middle" colspan="2">
-							<font face="Verdana" size="7"
-								color="black">
-								Projects
-							</font>
-							<hr color="black" width="90">
-						</td>
-					</tr>
-					<tr>
-						<td width="5%">
-							<img src="assets\projectsportfolio.jpg">
-						</td>
-
-					<td>
-					<font face="Verdana" size="5"
-					color="black">
-					My first project started with App Development for GDSC Solution 2024
-					using Flutter & Firebase.
-					Vinayak Magajikondi has guided me and has supported to complete this 
-					project. My heartful thanks to you, brother.
-					<a href="https://youtu.be/f6N_sahgfVo?si=vHFF5qyMpiFO7nko" style="text-decoration:none; size: 10; color:#2eafe2;">
-						<b>https://youtu.be/f6N_sahgfVo?si=vHFF5qyMpiFO7nko</b>
-					</a>
-
-					<hr color="black">
-					I have partcipated in GDSC Bit N Build hackathon with my team
-					Data Dominators and had built a frontend website using React Js.
-					<a href="https://joinportalpro.vercel.app/" style="text-decoration:none; size: 10; color:#2eafe2;">
-						<b>https://joinportalpro.vercel.app/</b>
-					</a>
-					<hr color="black">
-
-					I am currently working with MassCoders' MassCommerce website.
-					Dodaghatta Nihar has selected me as a technical core member
-					of MassCoders. I am very greatful to him.
-					<hr color="black">
-						There are many more projects I'm working on
-						and much more on they way.
-						Keep tuned to get more updates.
-						Thank You!
-					<hr color="black">
-					Cheers,
-					<br>
-					<b>Lessgoo!!.</b>
-				</font>
-			</td>
-					</tr>
-						</td>
-					</tr>
-				</table>
-			</td>
-		</tr>
-	</table>
-	<!--Projects(end)-->
-
-	<!--Achievement(start)-->
-	<table id="achievements" border="0" width="100%"
-		cellpadding="0" cellspacing="0" bgcolor="black">
-		<tr>
-			<td>
-				<table border="0" cellpadding="15"
-					cellspacing="0" width="80%" align="center">
-					<tr>
-						<td height="180" align="center" valign="middle">
-							<font face="Verdana" size="7" color="#4CAF50">
-								Achievements
-								<hr color="#4CAF50" width="100">
-							</font>
-						</td>
-					</tr>
-
-					<tr>
-						<td>
-							<font face="Verdana" size="4" color="white">
-								<ul>
-									<li>
-										<b>12th rank in NLTSE Computer applications in 2019.</b>
-										<ul>
-										
-										</ul>
-									</li>
-
-									<li>
-										<hr color="black">
-										<hr color="black">
-										<hr color="black">
-										<b>Achieved a participation certificate from WhiteHat Junior in 2021.</b>
-										<ul>
-										</ul>
-									</li>
-
-									<li>
-										<hr color="black">
-										<hr color="black">
-										<hr color="black">
-										<b>Happy Living.</b>
-										<ul>
-								
-											<hr color="black">
-											<hr color="black">
-											<hr color="black">
-											<hr color="black">
-											<hr color="black">
-										</ul>
-									</li>
-
-								</ul>
-
-							</font>
-						</td>
-					</tr>
-				</table>
-			</td>
-		</tr>
-	</table>
-	<!--Achievement(end)-->
+  
+<div id="projects" class="content-section">
+    <h2>Projects</h2>
+    <div class="project">
+        <img src="assets/marinepic.jpg" alt="Project Image">
+        <div class="project-details">
+            <h3>App Development for GDSC Solution 2024</h3>
+            <p>My first project started with App Development for GDSC Solution 2024 using Flutter & Firebase. Vinayak Magajikondi has guided me and has supported to complete this project. My heartfelt thanks to you, brother.</p>
+            <a href="https://youtu.be/f6N_sahgfVo?si=vHFF5qyMpiFO7nko" target="_blank" rel="noopener noreferrer">Watch on YouTube</a>
+        </div>
+    </div>
+    <div class="project">
+		<img src="assets/joinpic.jpg" alt="Project Image">
+        <div class="project-details">
+            <h3>GDSC Bit N Build Hackathon</h3>
+            <p>I participated in GDSC Bit N Build hackathon with my team Data Dominators and built a frontend website using React Js.</p>
+            <a href="https://joinportalpro.vercel.app/" target="_blank" rel="noopener noreferrer">Visit Website</a>
+        </div>
+    </div>
+    <div class="project">
+		<img src="assets/masspic.jpg" alt="Project Image">
+        <div class="project-details">
+            <h3>MassCoders' MassCommerce Website</h3>
+            <p>I am currently working with MassCoders' MassCommerce website. Dodaghatta Nihar has selected me as a technical core member of MassCoders. I am very grateful to him.</p>
+            <p>There are many more projects I'm working on and much more on the way. Keep tuned to get more updates.</p>
+            <p>Thank You!</p>
+            <p>Cheers,<br>Lessgoo!!</p>
+        </div>
+    </div>
+</div>
 
 
-	<!--Contact(start)-->
-	<table id="contact" border="0" width="100%"
-		cellpadding="0" cellspacing="0" bgcolor="#c2c0c3">
-		<tr>
-			<td>
-				<table border="0" cellpadding="15"
-					cellspacing="0" width="80%" align="center">
-					<tr>
-						<td height="180" align="center"
-							valign="middle" colspan="2">
-							<font face="Verdana" size="7"
-								color="black">
-								Contact
-							</font>
-							<hr color="black" width="90">
-						</td>
-					</tr>
-
-					<tr>
-						<td align="center" valign="top">
-							<table border="0" width="50%" cellpadding="15"
-								cellspacing="0" align="center" bgcolor="black">
-								<tr>
-									<td width="30%">
-										<hr color="black">
-										<font face="Verdana" size="4"
-											color="#ffffff">
-											Name
-										</font>
-									</td>
-									<td width="70%">
-										<font face="Verdana" size="4"
-											color="#ffffff">
-											<input type="text" size="40">
-										</font>
-									</td>
-								</tr>
-								<tr>
-									<td width="30%">
-										<font face="Verdana" size="4"
-											color="#ffffff">
-											Email
-										</font>
-									</td>
-									<td width="70%">
-										<font face="Verdana" size="4"
-											color="#ffffff">
-											<input type="email" size="40">
-										</font>
-									</td>
-								</tr>
-								<tr>
-									<td width="30%">
-										<font face="Verdana" size="4"
-											color="#ffffff">
-											Number
-										</font>
-									</td>
-									<td width="70%">
-										<font face="Verdana" size="4"
-											color="#ffffff">
-											<input type="number" size="12">
-										</font>
-									</td>
-								</tr>
-								<tr>
-									<td width="30%">
-										<font face="Verdana" size="4"
-											color="#ffffff">
-											Message
-										</font>
-									</td>
-									<td width="70%">
-										<font face="Verdana" size="4"
-											color="#ffffff">
-											<textarea rows="5"
-												cols="37">
-											</textarea>
-										</font>
-									</td>
-								</tr>
-								<tr>
-									<td width="30%">
-										
-									</td>
-									<td width="70%">
-										<button type="Submit">
-											<font face="Verdana"
-												size="4" color="black">
-												<b>Submit</b>
-											</font>
-										</button>
-										<hr color="black">
-										<hr color="black">
-									</td>
-								</tr>
-							</table>
-						</td>
-
-					</tr>
-					<tr>
-						<td colspan="2">
-							
-							
-						</td>
-					</tr>
-				</table>
-			</td>
-		</tr>
-	</table>
-	<!--Contact(end)-->
+   
+<div id="achievements" class="content-section">
+    <h2>Achievements</h2>
+    <p>12th rank in NLTSE Computer applications in 2019.</p>
+    <br>
+    <p>Achieved a participation certificate from WhiteHat Junior in 2021.</p>
+    <br>
+    <p>Happy Living.</p>
+</div>
 
 
-	<!--Footer1(start)-->
-	<table id="footer" border="0" width="100%"
-		cellpadding="0" cellspacing="0" bgcolor="#4CAF50">
-		<tr>
-			<td>
-				<table border="0" cellpadding="15"
-					cellspacing="0" width="90%" align="center">
-					<tr>
-						
-
-						<td>
-							|
-						</td>
-
-						<td width="13%" valign="top">
-							<a href=https://github.com/AnaghaS-Shastri" style="text-decoration:none; color:#fff;">
-								<b>GitHub: https://github.com/AnaghaS-Shastri</b>
-							</a>
-							
-						</td>
-
-						<td>
-							|
-						</td>
-
-						
-
-						<td>
-							|
-						</td>
-
-						<td width="13%" valign="top">
-							<a href="https://www.linkedin.com/in/anagha-s-shastri-39a323297" style="text-decoration:none; color:#fff;">
-								<b>LinkedIn: https://linkedin.com/in/anagha-s-shastri</b>
-							</a>
-							
-						</td>
-
-						<td>
-							|
-						</td>
-
-						
-						</td>
-
-						<td>
-							|
-						</td>
-
-						<td width="13%" valign="top">
-							<a href="https://www.instagram.com/a14a7h1__shastri_/?next=%2Fa14a7h1_shastri%2F#_" style="text-decoration:none; color:#fff;">
-								<b>Instagram: https://instagram.com/a14a7h1_</b>
-							</a>
-							
-						</td>
-
-						<td>
-							|
-						</td>
-
-						<td width="13%" valign="top">
-							<a href="mailto:anaghasshastri13@gmail.com" style="text-decoration:none; color:#fff;">
-								<b>Email: anaghasshastri13@gmail.com</b>
-							</a>
-						
-						</td>
-
-						<td>
-							|
-						</td>
-
-						
-					</tr>
-				</table>
-			</td>
-		</tr>
-	</table>
-	<!--Footer1(end)-->
+   
+<div id="contact" style="background-color: #c2c0c3; padding: 20px;">
+    <h2 style="text-align: center; color: black; font-size: 2rem; margin-bottom: 20px;">Contact</h2>
+    <hr style="border-color: black; width: 90%;">
+    
+    <div style="margin: 0 auto; max-width: 600px;">
+        <form action="#" method="post">
+            <div style="display: flex; flex-direction: column; gap: 10px;">
+                <label for="name" style="color: white;">Name</label>
+                <input type="text" id="name" name="name" style="padding: 10px; border: none; border-radius: 5px;">
+                
+                <label for="email" style="color: white;">Email</label>
+                <input type="email" id="email" name="email" style="padding: 10px; border: none; border-radius: 5px;">
+                
+                <label for="number" style="color: white;">Number</label>
+                <input type="tel" id="number" name="number" style="padding: 10px; border: none; border-radius: 5px;">
+                
+                <label for="message" style="color: white;">Message</label>
+                <textarea id="message" name="message" rows="5" style="padding: 10px; border: none; border-radius: 5px;"></textarea>
+                
+                <button type="submit" style="padding: 10px; border: none; border-radius: 5px; background-color: black; color: white; cursor: pointer;">Submit</button>
+            </div>
+        </form>
+    </div>
+    
+    <hr style="border-color: black; width: 90%;">
+</div>
 
 
-	<!--Footer2(start)-->
-	<table id="footer" border="0" width="100%"
-		cellpadding="0" cellspacing="0" bgcolor="black">
-		<tr>
-			<td>
-				<table border="0" cellpadding="15"
-					cellspacing="0" width="90%" align="center">
-					<tr>
-						<td width="80%" valign="top">
-							<font face="Verdana"
-								color="#fff" size="5">
-								©Copyright 2050 by Lessgoo!!
-								All rights reserved.
-							</font>
-						</td>
 
-						<td width="10%">
-							<font face="arial" color="black" size="5">
-								<a href="#header" style="text-decoration:none">
-									<font face="Verdana" color="#fff" size="6">
-										<b>TOP</b>
-									</font>
-								</a>
-							</font>
-						</td>
-					</tr>
-				</table>
-			</td>
-		</tr>
-	</table>
-	<!--Footer2(end)-->
+<div id="footer1" class="footer-section">
+    <p><b>GitHub:</b> <a href="https://github.com/AnaghaS-Shastri" style="color:white;">https://github.com/AnaghaS-Shastri</a></p>
+    <p><b>LinkedIn:</b> <a href="https://www.linkedin.com/in/anagha-s-shastri-39a323297" style="color:white;">https://linkedin.com/in/anagha-s-shastri</a></p>
+    <p><b>Instagram:</b> <a href="https://www.instagram.com/a14a7h1__shastri_/?next=%2Fa14a7h1_shastri%2F#_" style="color:white;">https://instagram.com/a14a7h1_</a></p>
+    <p><b>Email:</b> <a href="mailto:anaghasshastri13@gmail.com" style="color:white;">anaghasshastri13@gmail.com</a></p>
+</div>
+
+
+<div id="footer2" class="footer-section">
+    <p>© Copyright 2050 by Lessgoo!! All rights reserved.</p>
+    <a href="#header" style="color:white;">TOP</a>
+</div>
+
 
 </body>
 
